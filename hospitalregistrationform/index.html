@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital rgistration form</title>
+</head>
+
+<body>
+    <form action="/action_page.php">
+        <h1>Hospital Registration Enabling Form</h1>
+        <hr>
+        <div class="form-control">
+            <h3>Hospital Name</h3>
+            <input type="text" id="name" name="name" placeholder="Hospital name"><br>
+        </div>
+        <div class="form-control">
+            <h3>Hospital DGHS Registration No. :</h3>
+            <input type="number" id="number" name="dghs" placeholder="dghs number"><br>
+        </div>
+        <div class="form-control">
+            <h3>Hospital DGHS Registration Date</h3>
+            <input type="date" name="bdate" />
+        </div>
+        <div class="form-control">
+            <h3>Type of Hospital</h3>
+            <label class="choice"><input type="radio" name="inp">Primary health care</input></label><br>
+            <label class="choice"><input type="radio" name="inp">Community health care</input></label><br>
+            <label class="choice"><input type="radio" name="inp">Sub-district Hospital</input></label><br>
+            <label class="choice"><input type="radio" name="inp">District Hospital</input></label><br>
+            <label class="choice"><input type="radio" name="inp">State Hospital</input></label><br>
+        </div>
+        <hr>
+        <h1>Hospital contact details</h1>
+        <hr>
+        <div class="form-control">
+            <h3>Address</h3>
+            <input type="county" id="inputCounty" placeholder="County">
+            <input type="street" id="autocomplete" placeholder="Street">
+
+            <input type="city" id="inputCity" placeholder="City">
+
+            <input type="state" id="inputState" placeholder="State">
+            <input type="pin" id="inputpincode" placeholder="pincode">
+
+        </div>
+            <div class="form-control">
+                <label for="email" id="label-email">
+                    <h3>Hospital E-mail</h3>
+                </label>
+                <input type="email" id="email" placeholder="ex:myname@example.com">
+            </div>
+        <div class="form-control">
+                <label for="phone">
+                    <h3>Phone number:</h3>
+                </label>
+                <input type="tel" placeholder="Enter phone number" />
+            </div>
+        </div>
+        <footer>
+            <button>
+                <h3>verify</h3>
+            </button>
+        </footer>
+    </form>
+
+</body>
